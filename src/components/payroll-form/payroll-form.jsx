@@ -4,6 +4,7 @@ import profile2 from '../../assets/profile-images/Ellipse -3.png';
 import profile3 from '../../assets/profile-images/Ellipse -7.png';
 import profile4 from '../../assets/profile-images/Ellipse -8.png';
 import './payroll-form.scss';
+import EmployeeService from "../../services/employee-payroll-service";
 import logo from '../../assets/images/logo.png';
 import { useParams,Link, withRouter } from 'react-router-dom';
 
@@ -41,6 +42,12 @@ const PayrollForm = (props) => {
         }
     }
     const [formValue, setForm] = useState(initialValue);
+
+    const employeeService = new EmployeeService();
+
+    let _ = require('lodash');
+    formValue.id = _.uniqueId();
+
 
     const changeValue = (event) => {
         setForm({ ...formValue, [event.target.name]: event.target.value })
@@ -80,8 +87,8 @@ const PayrollForm = (props) => {
             isError = true;
         }
 
-        if ((formValue.salary.valueOf()<400000)||(formValue.salary.valueOf()>500000)) {
-            error.salary = 'Salary should be between 4,00,000 and 5,00,000!!'
+        if ((formValue.salary.valueOf()<300000)||(formValue.salary.valueOf()>500000)) {
+            error.salary = 'Salary should be between 3,00,000 and 5,00,000!!'
             isError = true;
         }
         if (formValue.profileUrl.length < 1) {
@@ -116,8 +123,28 @@ const PayrollForm = (props) => {
         if(await handleValidations()){
             console.log("error", formValue);
             return;
-        }
-    }
+        }else{
+            let object = {
+                name: formValue.name,
+                departments: formValue.departMentValue,
+                gender: formValue.gender,
+                salary: formValue.salary,
+                startDate: `${formValue.day} ${formValue.month} ${formValue.year}`,
+                notes: formValue.notes,
+                profilePic: formValue.profileUrl,
+              };
+              console.log("id"+formValue.id);
+              employeeService.addEmployee(object)
+                .then((data) => {
+                  alert("data added successfully");
+                  props.history.push("");
+                  window.location.reload();
+                })
+                .catch((err) => {
+                  alert("error while Adding data");
+                });
+            }
+     };
 
     const reset = () => {
         setForm({ ...initialValue, id: formValue.id, isUpdate: formValue.isUpdate });
