@@ -45,9 +45,43 @@ const PayrollForm = (props) => {
 
     const employeeService = new EmployeeService();
 
+    const params = useParams();
+
+    useEffect(() => {
+        if (params.id) {
+          getDataById(params.id);
+        }
+      }, []);
+
+      const getDataById = (id) => {
+        employeeService
+          .getEmployee(id)
+          .then((data) => {
+            console.log("data is ", data.data);
+            let obj = data.data;
+            setData(obj);
+          })
+          .catch((err) => {
+            console.log("err is ", err);
+          });
+      };
+
     let _ = require('lodash');
     formValue.id = _.uniqueId();
 
+
+    const setData = (obj) => {
+        let array = obj.startDate.split(" ");
+        setForm({
+          ...formValue,
+          ...obj,
+          departMentValue: obj.departMent,
+          isUpdate: true,
+          day: array[0],
+          month: array[1],
+          year: array[2],
+        });
+      };
 
     const changeValue = (event) => {
         setForm({ ...formValue, [event.target.name]: event.target.value })
@@ -134,6 +168,7 @@ const PayrollForm = (props) => {
                 profilePic: formValue.profileUrl,
               };
               console.log("id"+formValue.id);
+              console.log(object);
               employeeService.addEmployee(object)
                 .then((data) => {
                   alert("data added successfully");
