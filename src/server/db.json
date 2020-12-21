@@ -1,116 +1,42 @@
 {
   "employee": [
     {
-      "name": "Lisa Berhmen",
+      "name": "Ankit ",
       "departments": [
-        "HR",
-        "Sales"
-      ],
-      "gender": "female",
-      "salary": "432123",
-      "startDate": "12 June 2020",
-      "notes": "first test entry!\n",
-      "id": "124",
-      "profileUrl": "../../assets/profile-images/Ellipse -1.png"
-    },
-    {
-      "name": "Merlin Stauzfick",
-      "departments": [
-        "Sales"
-      ],
-      "gender": "male",
-      "salary": "432123",
-      "startDate": "16 Dec 2020",
-      "notes": "second test entry!",
-      "id": "222",
-      "profileUrl": "../../assets/profile-images/Ellipse -3.png"
-    },
-    {
-      "name": "Fredrick William ",
-      "departments": [
+        "Sales",
         "Engineer"
       ],
       "gender": "male",
-      "salary": "489999",
-      "startDate": "28 Oct 2019",
-      "notes": "third check entry!",
-      "id": "110",
-      "profileUrl": "../../assets/profile-images/Ellipse -8.png"
-    },
-    {
-      "name": "Emily Brown",
-      "departments": [
-        "HR",
-        "Engineer",
-        "Others"
-      ],
-      "gender": "female",
-      "salary": "456732",
-      "startDate": "16 May 2018",
-      "notes": "fourth check entry!!",
-      "id": "120",
-      "profileUrl": "../../assets/profile-images/Ellipse -1.png"
-    },
-    {
-      "name": "Aditya Sharma",
-      "departments": [
-        "Sales"
-      ],
-      "gender": "male",
-      "salary": "434343",
-      "startDate": "19 June 2019",
-      "notes": "fifth check entry!!",
-      "id": "80",
-      "profileUrl": "../../assets/profile-images/Ellipse -3.png"
-    },
-    {
-      "name": "Aakash Gandhi",
-      "departments": [
-        "Finance"
-      ],
-      "gender": "male",
-      "salary": "360900",
-      "startDate": "1 Jan 2020",
+      "salary": "422100",
+      "startDate": "12 Aug 2017",
       "notes": "Hello",
-      "profilePic": "../../assets/profile-images/Ellipse -3.png",
-      "id": "1b0owZR"
+      "profilePic": "../../assets/profile-images/Ellipse -8.png",
+      "id": 2
     },
     {
       "name": "Balram",
       "departments": [
-        "Finance"
+        "Finance",
+        "Engineer"
       ],
       "gender": "male",
-      "salary": "450100",
-      "startDate": "1 Jan 2020",
-      "notes": "Hello Balu",
+      "salary": "422500",
+      "startDate": "12 May 2018",
+      "notes": "Hello Balram",
       "profilePic": "../../assets/profile-images/Ellipse -3.png",
-      "id": "8g65Ggc"
+      "id": 3
     },
     {
-      "name": "Kriti",
+      "name": "Simran",
       "departments": [
         "HR"
       ],
-      "gender": "male",
-      "salary": "420400",
-      "startDate": "18 Nov 2020",
-      "notes": "Hello",
-      "profilePic": "../../assets/profile-images/Ellipse -8.png",
-      "id": "jkAb1VL"
-    },
-    {
-      "name": "Utkarsh",
-      "departments": [
-        "Engineer",
-        "Sales"
-      ],
-      "gender": "male",
-      "salary": "457500",
-      "startDate": "15 Aug 2018",
-      "notes": "Hello Uttu",
-      "profilePic": "../../assets/profile-images/Ellipse -8.png",
-      "id": "zPmIpia"
+      "gender": "female",
+      "salary": "464900",
+      "startDate": "6 April 2016",
+      "notes": "Simran",
+      "profilePic": "../../assets/profile-images/Ellipse -1.png",
+      "id": 4
     }
   ]
 }

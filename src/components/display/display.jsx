@@ -11,6 +11,10 @@ import EmployeeService from "../../services/employee-payroll-service";
 
 const Display = (props) => {
   const employeeService = new EmployeeService();
+  const remove = (employee)=>{ 
+    employeeService.deleteEmployee(employee.id).then(data => console.log("sucess")).catch(err=>console.log("error"))    
+    window.location.reload();
+  }
   return (
     <table id="display" className="display">
       <tbody>
@@ -53,7 +57,7 @@ const Display = (props) => {
               <td> ₹ {element.salary}</td>
               <td>{element.startDate}</td>
               <td>
-                <img
+                <img onClick={()=>remove(element)}
                   src={deleteIcon}
                   alt="delete"
                 />

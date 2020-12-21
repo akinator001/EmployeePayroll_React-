@@ -23,7 +23,7 @@ const PayrollForm = (props) => {
         ],
         departMentValue: [],
         gender: '',
-        salary: '',
+        salary: '400000',
         day: '1',
         month: 'Jan',
         year: '2020',
@@ -42,7 +42,7 @@ const PayrollForm = (props) => {
         }
     }
     const [formValue, setForm] = useState(initialValue);
-
+    
     const employeeService = new EmployeeService();
 
     const params = useParams();

@@ -80,7 +80,9 @@
       cursor: pointer;
       text-decoration: none;
     }
-  
+    .add-button:hover{
+      opacity: 0.8;
+    }
     .table-main {
       width: 80%;
       margin: 0 auto;

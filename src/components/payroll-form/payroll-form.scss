@@ -53,6 +53,7 @@ header {
           text-transform: capitalize;
           opacity: 1;
           padding-bottom: 30px;
+          text-align: center;
         }
 
         .label {
@@ -124,15 +125,23 @@ header {
             border: 1px solid #707070;
             margin-left: 15px;
         }
+        .submitButton:hover{
+          background: palegreen;
+        }
         .resetButton {
             border: none;
             border: 1px solid #707070;
+        }
+        .resetButton:hover{
+          opacity: 0.5;
         }
         .cancelButton {
           text-decoration: none;
           text-align: center;
         }
-
+        .cancelButton:hover{
+          background: rgb(214, 135, 135);
+        }
         label {
           padding: 12px 12px 12px 0;
           display: inline-block;
