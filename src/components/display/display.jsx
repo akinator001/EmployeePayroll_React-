@@ -15,6 +15,11 @@ const Display = (props) => {
     employeeService.deleteEmployee(employee.id).then(data => console.log("sucess")).catch(err=>console.log("error"))    
     window.location.reload();
   }
+
+  const edit = (employee)=>{ 
+    props.history.push(`/payroll-form/${employee.id}`);
+  }
+
   return (
     <table id="display" className="display">
       <tbody>
@@ -61,7 +66,7 @@ const Display = (props) => {
                   src={deleteIcon}
                   alt="delete"
                 />
-                <img
+                <img onClick={()=>edit(element)}
                   src={editIcon}
                   alt="edit"
                 />

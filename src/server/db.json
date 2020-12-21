@@ -25,18 +25,6 @@
       "notes": "Hello Balram",
       "profilePic": "../../assets/profile-images/Ellipse -3.png",
       "id": 3
-    },
-    {
-      "name": "Simran",
-      "departments": [
-        "HR"
-      ],
-      "gender": "female",
-      "salary": "464900",
-      "startDate": "6 April 2016",
-      "notes": "Simran",
-      "profilePic": "../../assets/profile-images/Ellipse -1.png",
-      "id": 4
     }
   ]
 }

@@ -29,6 +29,7 @@
       .search-box {
         position: relative;
         margin-left: 53%;
+        display: flex;
         .input {
           width: 35px;
           padding: 12px;
@@ -70,6 +71,7 @@
     .add-button {
       font: normal normal normal 19px/26px Roboto;
       letter-spacing: 0px;
+      display: flex;
       color: #ffffff;
       opacity: 1;
       background: #82a70c 0% 0% no-repeat padding-box;
