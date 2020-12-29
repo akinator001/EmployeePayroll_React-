@@ -25,6 +25,58 @@
       "notes": "Hello Balram",
       "profilePic": "../../assets/profile-images/Ellipse -3.png",
       "id": 3
+    },
+    {
+      "name": "Aakash",
+      "departments": [
+        "Engineer",
+        "Finance"
+      ],
+      "gender": "male",
+      "salary": "434000",
+      "startDate": "20 Feb 2017",
+      "notes": "Hello Aakash",
+      "profilePic": "../../assets/profile-images/Ellipse -8.png",
+      "id": 5
+    },
+    {
+      "name": "Manpreet",
+      "departments": [
+        "Sales",
+        "HR"
+      ],
+      "gender": "female",
+      "salary": "415900",
+      "startDate": "22 Feb 2017",
+      "notes": "Hello Manu",
+      "profilePic": "../../assets/profile-images/Ellipse -7.png",
+      "id": 6
+    },
+    {
+      "name": "Balram",
+      "departments": [
+        "Finance",
+        "Engineer",
+        "Sales"
+      ],
+      "gender": "male",
+      "salary": "412200",
+      "startDate": "12 May 2018",
+      "notes": "Hello Balram",
+      "profilePic": "../../assets/profile-images/Ellipse -3.png",
+      "id": 7
+    },
+    {
+      "name": "Aman",
+      "departments": [
+        "HR"
+      ],
+      "gender": "male",
+      "salary": "422100",
+      "startDate": "13 Oct 2018",
+      "notes": "Hello",
+      "profilePic": "../../assets/profile-images/Ellipse -3.png",
+      "id": 8
     }
   ]
 }
